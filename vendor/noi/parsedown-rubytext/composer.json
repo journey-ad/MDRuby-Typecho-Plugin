@@ -1,0 +1,29 @@
+{
+    "name": "noi/parsedown-rubytext",
+    "description": "An extension of Parsedown that adds support for ruby text (aka furigana) in Markdown.",
+    "keywords": ["library", "parser", "markdown", "parsedown", "extension", "ruby", "rubi", "furigana", "aozora bunko"],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Akihiro Yamanoi",
+            "email": "akihiro.yamanoi@gmail.com"
+        }
+    ],
+    "require": {
+        "erusev/parsedown": "~1.4"
+    },
+    "suggest": {
+        "erusev/parsedown-extra": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "4.*",
+        "erusev/parsedown-extra": "*"
+    },
+    "autoload": {
+        "psr-4": { "Noi\\": "lib/" }
+    },
+    "autoload-dev": {
+        "psr-4": { "Noi\\Tests\\": "tests/" }
+    }
+}

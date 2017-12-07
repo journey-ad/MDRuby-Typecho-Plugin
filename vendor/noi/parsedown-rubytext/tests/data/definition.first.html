@@ -1,0 +1,11 @@
+<p>以下の<ruby>形式<rp>（</rp><rt>けいしき</rt><rp>）</rp></ruby>で<ruby>漢<rp>（</rp><rt>かん</rt><rp>）</rp>字<rp>（</rp><rt>じ</rt><rp>）</rp></ruby>のルビを定義できます。空ルビ<ruby>形式<rt></rt></ruby>もルビ振り対象になります。</p>
+<p>inline形式で明示的に書いたルビが<ruby>優先<rp>（</rp><rt>ユウセン</rt><rp>）</rp></ruby>です。</p>
+<ul>
+<li>リスト内の漢字にもルビを振ります。</li>
+<li><ruby id="id" class="class" lang="ja">属性値<rp>（</rp><rt>ぞくせいち</rt><rp>）</rp></ruby>付きで定義することもできます。</li>
+<li>空ルビの<ruby class="inline">属性値<rt></rt></ruby>は、inline側が<ruby class="inline">優先<rt></rt></ruby>です。</li>
+</ul>
+<p><code>inline code内の漢字は対象外</code>です。もちろん</p>
+<pre><code>&lt;div&gt;コードブロック内の漢字も対象外です&lt;/div&gt;</code></pre>
+<p><ruby>循環参照<rp>（</rp><rt><ruby>じゅんかんさんしょう<rp>（</rp><rt><ruby>Circular reference<rt></rt></ruby></rt><rp>）</rp></ruby></rt><rp>）</rp></ruby>による無限ループ防止のため、自動ルビ振り対象はルビのルビまでです。</p>
+<p>同じ文字で始まる親文字を複数定義した場合は、<ruby>最長一致<rp>（</rp><rt>さいちょういっち</rt><rp>）</rp></ruby>する単語にルビ付けします。</p>
