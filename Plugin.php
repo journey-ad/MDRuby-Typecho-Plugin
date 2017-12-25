@@ -5,7 +5,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
  * 
  * @package MDRuby
  * @author journey.ad
- * @version 0.1
+ * @version 0.2
  * @link https://imjad.cn
  */
 class MDRuby_Plugin implements Typecho_Plugin_Interface
@@ -90,7 +90,9 @@ ruby > rt {
 		}
 
 		$pd = new \Noi\ParsedownExtraRubyText();
-		
+		$pd->setBreaksEnabled(true);
+		$pd->setUrlsLinked(false);
+
 		$content = $pd->text($text);
 		
 		return $content;
